@@ -2,10 +2,10 @@ package model
 
 import (
 	"fmt"
+	"gen/field"
 	"reflect"
 	"strings"
 
-	"gorm.io/gen/field"
 	"gorm.io/gorm"
 )
 

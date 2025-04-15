@@ -3,8 +3,7 @@ package helper
 import (
 	"errors"
 	"fmt"
-
-	"gorm.io/gen/field"
+	"gen/field"
 )
 
 // Object an object interface

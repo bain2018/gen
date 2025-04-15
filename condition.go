@@ -2,9 +2,7 @@ package gen
 
 import (
 	"fmt"
-
 	"gorm.io/datatypes"
-	"gorm.io/gen/field"
 	"gorm.io/gorm/clause"
 )
 
@@ -49,11 +47,11 @@ func condToExpression(conds []Condition) ([]clause.Expression, error) {
 			return nil, err
 		}
 
-		switch cond.(type) {
-		case *condContainer, field.Expr, SubQuery:
-		default:
-			return nil, fmt.Errorf("unsupported condition: %+v", cond)
-		}
+		//switch cond.(type) {
+		//case *condContainer, field.Expr, SubQuery:
+		//default:
+		//	return nil, fmt.Errorf("unsupported condition: %+v", cond)
+		//}
 
 		switch e := cond.BeCond().(type) {
 		case []clause.Expression:

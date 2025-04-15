@@ -2,6 +2,7 @@ package gen
 
 import (
 	"context"
+	"gen/field"
 	"testing"
 	"time"
 
@@ -10,8 +11,6 @@ import (
 	"gorm.io/gorm/clause"
 	"gorm.io/gorm/schema"
 	"gorm.io/gorm/utils/tests"
-
-	"gorm.io/gen/field"
 )
 
 func TestConfig(t *testing.T) {

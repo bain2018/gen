@@ -1,6 +1,7 @@
 package gen
 
 import (
+	"gen/field"
 	"reflect"
 	"strings"
 	"testing"
@@ -9,8 +10,6 @@ import (
 	"gorm.io/gorm"
 	"gorm.io/gorm/clause"
 	"gorm.io/hints"
-
-	"gorm.io/gen/field"
 )
 
 var (

@@ -2,9 +2,8 @@ package model
 
 import (
 	"bytes"
+	"gen/field"
 	"strings"
-
-	"gorm.io/gen/field"
 )
 
 const (
